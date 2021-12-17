@@ -1,0 +1,23 @@
+{% extends 'ac/base.html' %}
+
+{% block title %}
+main page
+{% endblock title %}
+
+
+{% block content %}
+      
+<form action="" method="POST" class="ui form" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div>
+        {{form}}
+    </div>
+    <br>
+   <div>
+    <button type="submit" class="ui button primary" >Submit </button>
+
+   </div>
+    
+    </form>
+
+    {% endblock content %}   
